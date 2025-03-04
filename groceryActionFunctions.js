@@ -37,11 +37,9 @@ const buyItem = (name) => {
     for (const groceryItem of groceryArray) {
         if (groceryItem.gname.toLowerCase() === name.toLowerCase()) {
             groceryItem.bought = true
-        } else {
-            console.log('Item not found!')
         }
-        displayItems()
     }  
+    displayItems()
 }
 
 module.exports = {
