@@ -1,7 +1,9 @@
-// Import the readline module for handling user input in the console
+/*
+This file has the features/functions of the program
+*/
+
 const readline = require('readline')
 const { item, addItem, removeItem, displayItems, buyItem } = require('./groceryActionFunctions.js')
-//const { welcomePage } = require('./groceryShoppingList.js')
 const rl = readline.createInterface({
   input: process.stdin, // Read from standard input (keyboard)
   output: process.stdout, // Write to standard output (console)
@@ -36,7 +38,6 @@ const itemPrice = () => {
 
 const isAddMore = () => {
     rl.question('Do you want to add more grocery items? [y/n]: ', (more) => {
-        //true or false
         if ( more.toLowerCase() === 'y' ) {
             itemName()
         } else {

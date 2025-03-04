@@ -1,4 +1,6 @@
-
+/*
+This file handles the Array and Object
+*/
 
 const item = () => {
     this.gname = gname,
@@ -26,8 +28,7 @@ const displayItems = () => {
         name:${element.gname}
         quantity: ${element.quantity}
         price: ${element.price}
-        bought: ${element.bought}
-`)
+        bought: ${element.bought}`)
     })
     welcomePage()
 }

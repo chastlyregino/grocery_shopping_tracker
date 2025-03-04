@@ -1,3 +1,7 @@
+/*
+This file serves as index.js or the entry point
+*/
+
 // Import the readline module for handling user input in the console
 const readline = require('readline')
 const { itemName, itemToRemove, itemToBuy } = require('./groceryQuestions.js')
@@ -53,5 +57,6 @@ function welcomePage() {
 welcomePage()
 
 module.exports = {
-    welcomePage
+    welcomePage,
+    rl
 }
