@@ -6,7 +6,7 @@ const item = () => {
     this.gname = gname,
     this.quantity = quantity,
     this.price = price,
-    this.bought = bought
+    this.purchased = purchased
 }
 
 let groceryArray = []
@@ -28,7 +28,7 @@ const displayItems = () => {
         name:${element.gname}
         quantity: ${element.quantity}
         price: ${element.price}
-        bought: ${element.bought}`)
+        purchased: ${element.purchased}`)
     })
     welcomePage()
 }
@@ -36,7 +36,7 @@ const displayItems = () => {
 const buyItem = (name) => {
     for (const groceryItem of groceryArray) {
         if (groceryItem.gname.toLowerCase() === name.toLowerCase()) {
-            groceryItem.bought = true
+            groceryItem.purchased = true
         }
     }  
     displayItems()

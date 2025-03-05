@@ -23,7 +23,7 @@ Welcome to Grocery Shopping List!
     [A] Add item into grocery list
     [R] Remove item from grocery list
     [D] Display grocery list
-    [C] Check item if it has bought
+    [C] Check item if it has been purchased
     [E] Exit the program
     :`, (card) => {
         switch (card.toLowerCase()) {
@@ -69,7 +69,7 @@ const itemQuantity = () => {
 const itemPrice = () => {
     rl.question('What is the price of the item? :', (price) => {
         gItem.price = Number(price)
-        gItem.bought = Boolean(false)
+        gItem.purchased = Boolean(false)
         addItem(gItem)
         isAddMore()
     })
